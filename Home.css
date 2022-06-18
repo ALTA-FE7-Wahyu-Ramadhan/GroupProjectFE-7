@@ -9,6 +9,9 @@
 }
 
 /* <!-- Navbar --> */
+.kontainer{
+  font-family: 'Muli',sans-serif;
+}
 .tombolAtas{
     transition: 0.2s;
 }
