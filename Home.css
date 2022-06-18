@@ -1,6 +1,19 @@
+/* Fonts */
+@font-face{
+  font-family: 'Roboto', sans-serif;
+  src: url('fonts/Roboto-Medium.ttf');
+}
+@font-face {
+  font-family: 'Muli', sans-serif;';
+  src: url(img/Muli/Muli-Bold.ttf);));
+}
+
 /* <!-- Navbar --> */
 .tombolAtas{
     transition: 0.2s;
+}
+.putihatas{
+  background-color: #fff;
 }
 .tombolAtas:hover{
     text-align: center;
@@ -48,23 +61,97 @@
     opacity: 1;
     right: 0;
   }
+  .dummyhead{
+    height: 93.03px;
+    color:#F47522;
+    border: #F47522;
+  }
 
   /* <!-- Navbar End --> */
 
 /*  <!-- Jumbotron --> */
 
 .bgBiru{
-  padding: 161px 160px;
   background-color: #EDF6FF;
+  padding: 161px 160px 162px 160px;
+  color: #19345E;
 }
-.jumbotronimg{
-  width: 400px;
-  float: left;
+.oren{
+  color: #F47522;
+}
+.hi{
+  font-size: 25px;
+  font-weight: 700;
+  font-family: 'Muli',sans-serif;
+}
+.we{
+  font-family: Roboto, sans-serif;
+  font-size: 45px;
+  font-weight: 700;
+}
+.paragraf{
+  font-family: 'Muli', sans-serif;
+  font-size: 17px;
+  font-weight: 700;
+}
+
+.more {
+  border-radius: 20px;
+  background-color: #F47522;
+  color: #fff !important;
+  text-align: center;
+  font-size: 15px;
+  width: 230px;
+  height: 40px;
+  cursor: pointer;
+  margin: 5px;
+}
+.tdkhover{
+  width: 20px;
+  margin-right: -30px;
+}
+.imgmore{
+    width: 20px;
+   margin-left: 20px;
+  }
+.more span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+.more:hover{
+  border: #F47522 1px solid;
+  background-color: #fff;
+  color: #F47522 !important;
+}
+.more span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0s;
+}
+
+.more:hover span {
+  padding-right: 25px;
+}
+.more:hover span:after {
+  opacity: 1;
+  right: 0;
 }
 /*  <!-- Jumbotron End--> */
 
-/* Media min 991px */
-@media screen and (min-width: 991px) {
+/* Kapsul */
+.kapsul{
+  margin: auto;
+  -webkit-box-shadow: 0px 11px 19px 0px rgba(0,0,0,0.65); 
+  box-shadow: 0px 11px 19px 0px rgba(0,0,0,0.1);
+}
+
+/* Media min 992px */
+@media screen and (min-width: 992px) {
     .tombolAtas{
         margin-right: 25px;
     }
@@ -74,13 +161,43 @@
     .kontaiter{
         padding: 15px 159px;
     }
-}
-/* Media min 991px--END */
-@media screen and (max-width: 991px) {
-    .tombolAtas{
-        text-align: center;
+    .jumbotronimg{
+      width: 420px;
+      float: left;
+      margin-right: 37px;
+      display: flex;
     }
-    .kontak{
-        margin:auto
+    .hero1{
+      height: 420px;
+      display: flex;
+    }
+    .tulisan{
+      align-self: center;
+    }
+    .kapsul{
+      width: 814px;
+      height: 110px;
+      border-radius: 50px;
     }
 }
+
+/* Media min 992px--END */
+/* Media max 992px */
+@media screen and (max-width: 992px) {
+  .tombolAtas{
+    text-align: center;
+  }
+  .kontak{
+    margin:auto
+  }
+  .jumbotronimg{
+    width: 100%;
+  }
+  .hi,.we, .paragraf{
+    text-align: center;
+  }
+  .more{
+    margin: auto;
+  }
+}
+/* Media max 992px--END */
