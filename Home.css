@@ -13,7 +13,7 @@
   font-family: 'Muli',sans-serif;
 }
 .tombolAtas{
-    transition: 0.2s;
+    transition: 0.3s;
 }
 .putihatas{
   background-color: #fff;
@@ -21,10 +21,12 @@
 .tombolAtas:hover{
     text-align: center;
     border-radius: 20px;
-    border: #F47522 3px double;
+    border-bottom: #F47522 3px ridge;
     color: blue !important;
-    box-shadow: inset 0 0 10px #F47522;
+    -webkit-box-shadow: inset 0px -5px 19px 0px rgba(244,117,34,0.39); 
+    box-shadow: inset 0px -5px 19px 0px rgba(244,117,34,0.39);
     height: 38px;
+    font-weight: bold;
 }
 .kontak {
     border-radius: 20px;
@@ -148,11 +150,63 @@
 
 /* Kapsul */
 .kapsul{
+  width: 814px;
+  height: 110px;
+  border-radius: 50px;
   margin: auto;
   -webkit-box-shadow: 0px 11px 19px 0px rgba(0,0,0,0.65); 
   box-shadow: 0px 11px 19px 0px rgba(0,0,0,0.1);
+  display: flex;
+  align-items: center;
+  color: #19345E;
 }
-
+.kiriKapsul{
+  flex: 1;
+  height: 42.5px ;
+  border-right: 1px solid #AAAAAA;
+}
+.tengahKapsul{
+  height: 42.5px ;
+  flex: 1;
+}
+.kemaskapsul{
+  width: 160px;
+  margin: auto;
+  position: relative;
+}
+h5.ataskapsul{
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+  margin-top: 4px;
+}
+.gambarkapsul{
+  width: 40px;
+  padding: 7px;
+  background-color: #F47522;
+  border-radius: 50%;
+  float: left;
+  margin-right: 10px;
+}
+h5.bawahkapsul{
+  margin-top: -8px;
+  font-family: 'Muli', sans-serif;
+  font-size: 14px;
+}
+.kananKapsul{
+  flex: 1;
+  height: 42.5px ;
+  border-left: 1px solid #AAAAAA;
+}
+/* Kapsul END */
+/* About */
+.areaabout{
+  height: 176px;
+}
+.about{
+  
+}
+/* About END */
 /* Media min 992px */
 @media screen and (min-width: 992px) {
     .tombolAtas{
@@ -177,11 +231,6 @@
     .tulisan{
       align-self: center;
     }
-    .kapsul{
-      width: 814px;
-      height: 110px;
-      border-radius: 50px;
-    }
 }
 
 /* Media min 992px--END */
@@ -201,6 +250,9 @@
   }
   .more{
     margin: auto;
+  }
+  .kapsul{
+    width: 100%;
   }
 }
 /* Media max 992px--END */
