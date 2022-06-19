@@ -203,8 +203,20 @@ h5.bawahkapsul{
 .areaabout{
   height: 176px;
 }
+.areaabout{
+  height: 176px;
+  text-align: center;
+  padding: 60px 0px;
+}
 .about{
+  float: left;
   
+}
+.garis{
+  float: left;
+  width: 35px;
+  border-bottom: 2px solid #F47522;
+  margin: 15px 14.5px;
 }
 /* About END */
 /* Media min 992px */
