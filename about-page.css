@@ -137,6 +137,7 @@ ul p {
 
 .flex p {
     margin-left: 5px;
+    margin-top: 20px;
 }
 
 li:nth-child(2), li:nth-child(3) {
@@ -144,7 +145,8 @@ li:nth-child(2), li:nth-child(3) {
 }
 
 li:nth-child(2){
-    margin-top: -20px;
+    margin-top: -10px;
+
 }
 
 li:nth-child(3) {

@@ -5,7 +5,7 @@
   }
   @font-face {
     font-family: 'Muli', sans-serif;';
-    src: url(img/Muli/Muli-Bold.ttf);));
+    src: url(img/Muli/Muli-Bold.ttf);
   }
   
   /* <!-- Navbar --> */
@@ -39,7 +39,10 @@
       cursor: pointer;
       margin: 5px;
     }
-    
+    li.nav-item{
+      margin-top: 0px !important;
+      opacity: 1 !important;
+    }
     .kontak span {
       cursor: pointer;
       display: inline-block;
@@ -73,5 +76,22 @@
     }
   
     /* <!-- Navbar End --> */
-    /* <!-- Hero 1 --> */
-    /* <!-- Hero 1 END--> */
+
+    @media screen and (min-width: 992px) {
+      .tombolAtas{
+          margin-right: 25px;
+      }
+      .kontak{
+          margin:0px;
+      }
+      .kontaiter{
+          padding: 15px 159px;
+      }
+    }
+    @media screen and (max-width: 992px) {
+      .tombolAtas{
+        text-align: center;
+      }
+      .kontak{
+        margin:auto
+      }
