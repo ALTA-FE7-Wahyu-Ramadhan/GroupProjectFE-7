@@ -5,7 +5,11 @@
   }
   @font-face {
     font-family: 'Muli', sans-serif;
-    src: url(img/Muli/Muli-Bold.ttf);
+    src: url('fonts/Muli/Muli-Bold.ttf');
+  }
+  @font-face{
+    font-family: 'Poppins', sans-serif;
+    src: url('fonts/Poppins/Poppins-Regular.ttf');
   }
   
   /* <!-- Navbar --> */
@@ -74,151 +78,68 @@
   
     /* <!-- Navbar End --> */
   
-  /*  <!-- Jumbotron --> */
-  
-  .bgBiru{
-    background-color: #EDF6FF;
-    padding: 161px 160px 162px 160px;
-    color: #19345E;
-  }
-  .oren{
-    color: #F47522;
-  }
-  .hi{
-    font-size: 25px;
-    font-weight: 700;
-    font-family: 'Muli',sans-serif;
-  }
-  .we{
-    font-family: Roboto, sans-serif;
+/* judul */
+.areajudul{
+  height: 176px;
+  text-align: center;
+  padding: 60px 100px;
+}
+.judul{
     font-size: 45px;
-    font-weight: 700;
-  }
-  .paragraf{
     font-family: 'Muli', sans-serif;
-    font-size: 17px;
     font-weight: 700;
-  }
-  
-  .more {
-    border-radius: 20px;
-    background-color: #F47522;
-    color: #fff !important;
-    text-align: center;
-    font-size: 15px;
-    width: 230px;
-    height: 40px;
-    cursor: pointer;
-    margin: 5px;
-  }
-  .tdkhover{
-    width: 20px;
-    margin-right: -30px;
-  }
-  .imgmore{
-      width: 20px;
-     margin-left: 20px;
-    }
-  .more span {
-    cursor: pointer;
-    display: inline-block;
-    position: relative;
-    transition: 0.5s;
-  }
-  .more:hover{
-    border: #F47522 1px solid;
-    background-color: #fff;
-    color: #F47522 !important;
-  }
-  .more span:after {
-    content: '\00bb';
-    position: absolute;
-    opacity: 0;
-    top: 0;
-    right: -20px;
-    transition: 0s;
-  }
-  
-  .more:hover span {
-    padding-right: 25px;
-  }
-  .more:hover span:after {
-    opacity: 1;
-    right: 0;
-  }
-  /*  <!-- Jumbotron End--> */
-  
-  /* Kapsul */
-  .kapsul{
-    width: 814px;
-    height: 110px;
-    border-radius: 50px;
-    margin: auto;
-    -webkit-box-shadow: 0px 11px 19px 0px rgba(0,0,0,0.65); 
-    box-shadow: 0px 11px 19px 0px rgba(0,0,0,0.1);
-    display: flex;
-    align-items: center;
     color: #19345E;
-  }
-  .kiriKapsul{
-    flex: 1;
-    height: 42.5px ;
-    border-right: 1px solid #AAAAAA;
-  }
-  .tengahKapsul{
-    height: 42.5px ;
-    flex: 1;
-  }
-  .kemaskapsul{
-    width: 160px;
-    margin: auto;
-    position: relative;
-  }
-  h5.ataskapsul{
-    font-family: 'Roboto', sans-serif;
-    font-size: 16px;
-    font-weight: bold;
-    margin-top: 4px;
-  }
-  .gambarkapsul{
-    width: 40px;
-    padding: 7px;
-    background-color: #F47522;
-    border-radius: 50%;
-    float: left;
-    margin-right: 10px;
-  }
-  h5.bawahkapsul{
-    margin-top: -8px;
-    font-family: 'Muli', sans-serif;
-    font-size: 14px;
-  }
-  .kananKapsul{
-    flex: 1;
-    height: 42.5px ;
-    border-left: 1px solid #AAAAAA;
-  }
-  /* Kapsul END */
-  /* About */
-  .areaabout{
-    height: 176px;
-  }
-  .areaabout{
-    height: 176px;
-    text-align: center;
-    padding: 60px 0px;
-  }
-  .about{
-    float: left;
-    
-  }
-  .garis{
-    float: left;
-    width: 35px;
-    border-bottom: 2px solid #F47522;
-    margin: 15px 14.5px;
-  }
-  /* About END */
+}
+.judul:after, .judul:before{
+    content: '\2014';
+    color: #F47522;
+}
+/* judul END */
+
+/* Gambar */
+.gambar{
+  width: 100%;
+}
+/* Gambar End */
+
+/* Isi */
+.isi{
+  padding: 0px 160px;
+  margin-top: 30px;
+  color: #19345E;
+}
+.subjudul{
+  font-size: 50px;
+  font-family: 'Muli', sans-serif;
+  font-weight: bold;
+}
+.subsubjudul{
+  font-weight: bold;
+  margin-top: 32px;
+  margin-bottom: 51px;
+  font-size: 20px;
+}
+.paragraf{
+  text-align: justify;
+  font-size: 15px;
+  font-family: 'Poppins', sans-serif;
+}
+.bubble{
+  width: 70px;
+  padding: 5px;
+  background-color: #fff;
+  border: #F47522 dashed 2px;
+  border-radius: 50%;
+  position: fixed;
+  bottom: 50px;
+  left: 7px;
+}
+.bubble:hover{
+  border: #F47522 solid 2px;
+  box-shadow: inset 0px 0px 10px 0px rgba(58, 37, 23, 0.5);
+}
+/* Isi End */
+
   /* Media min 992px */
   @media screen and (min-width: 992px) {
       .tombolAtas{
@@ -227,44 +148,19 @@
       .kontak{
           margin:0px;
       }
-      .kontaiter{
-          padding: 15px 159px;
+    }
+    
+    /* Media min 992px--END */
+    /* Media max 992px */
+    @media screen and (max-width: 992px) {
+      .tombolAtas{
+        text-align: center;
       }
-      .jumbotronimg{
-        width: 420px;
-        float: left;
-        margin-right: 37px;
-        display: flex;
+      .kontak{
+        margin:auto
       }
-      .hero1{
-        height: 420px;
-        display: flex;
+      .isi{
+        padding: 0px;
       }
-      .tulisan{
-        align-self: center;
-      }
-  }
-  
-  /* Media min 992px--END */
-  /* Media max 992px */
-  @media screen and (max-width: 992px) {
-    .tombolAtas{
-      text-align: center;
-    }
-    .kontak{
-      margin:auto
-    }
-    .jumbotronimg{
-      width: 100%;
-    }
-    .hi,.we, .paragraf{
-      text-align: center;
-    }
-    .more{
-      margin: auto;
-    }
-    .kapsul{
-      width: 100%;
-    }
-  }
+      
   /* Media max 992px--END */
