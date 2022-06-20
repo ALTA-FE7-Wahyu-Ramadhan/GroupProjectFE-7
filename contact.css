@@ -1,0 +1,223 @@
+/* Fonts */
+@font-face{
+    font-family: 'Roboto', sans-serif;
+    src: url('fonts/Roboto-Medium.ttf');
+  }
+  @font-face {
+    font-family: 'Muli', sans-serif;
+    src: url('fonts/Muli/Muli-Bold.ttf');
+  }
+  @font-face{
+    font-family: 'Poppins', sans-serif;
+    src: url('fonts/Poppins/Poppins-Regular.ttf');
+  }
+  
+  /* <!-- Navbar --> */
+  .kontainer{
+    font-family: 'Muli',sans-serif;
+  }
+  .tombolAtas{
+      transition: 0.3s;
+  }
+  .putihatas{
+    background-color: #fff;
+  }
+  .tombolAtas:hover{
+      text-align: center;
+      border-radius: 20px;
+      border-bottom: #F47522 3px ridge;
+      color: blue !important;
+      -webkit-box-shadow: inset 0px -5px 19px 0px rgba(244,117,34,0.39); 
+      box-shadow: inset 0px -5px 19px 0px rgba(244,117,34,0.39);
+      height: 38px;
+      font-weight: bold;
+  }
+  .kontak {
+      border-radius: 20px;
+      border: 1px solid #F47522;
+      color: #F47522 !important;
+      text-align: center;
+      font-size: 15px;
+      width: 130px;
+      height: 38px;
+      cursor: pointer;
+      margin: 5px;
+    }
+    
+    .kontak span {
+      cursor: pointer;
+      display: inline-block;
+      position: relative;
+      transition: 0.5s;
+    }
+    .kontak:hover{
+      background-color: #F47522;
+      color: #fff !important;
+    }
+    .kontak span:after {
+      content: '\00bb';
+      position: absolute;
+      opacity: 0;
+      top: 0;
+      right: -20px;
+      transition: 0s;
+    }
+    
+    .kontak:hover span {
+      padding-right: 25px;
+    }
+    .kontak:hover span:after {
+      opacity: 1;
+      right: 0;
+    }
+    .dummyhead{
+      height: 93.03px;
+      color:#F47522;
+      border: #F47522;
+    }
+  
+    /* <!-- Navbar End --> */
+  
+/* judul */
+.areajudul{
+  height: 176px;
+  text-align: center;
+  padding: 60px 100px;
+}
+.judul{
+    font-size: 45px;
+    font-family: 'Muli', sans-serif;
+    font-weight: 700;
+    color: #19345E;
+}
+.judul:after, .judul:before{
+    content: '\2014';
+    color: #F47522;
+}
+/* judul END */
+/* Konten */
+dl dd{
+    font-size: 18px;
+    font-family: 'Poppins', sans-serif;
+    color: #19345E;
+}
+.isikiri{
+    color: #19345E;
+    font-family: 'Poppins', sans-serif;
+}
+.gambarkecil{
+    width: 15px;
+    margin-left: 15px;
+}
+.konten{
+  width: 100%;
+  padding:0px 160px;
+}
+.isigambarkecil{
+    width: 15px;
+}
+.linktext{
+    text-decoration: none;
+}
+.isikanan{
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+}
+span{
+    color: #F47522;
+}
+.judulkotak{
+    margin-bottom: 15px;
+}
+.form-control{
+    margin-bottom: 30.84px;
+}
+.submit {
+    border-radius: 20px;
+    background-color: #F47522;
+    text-align: center;
+    font-size: 15px;
+    width: 205px;
+    height: 40px;
+    cursor: pointer;
+    margin: 5px;
+    padding-right: 30px;
+  }
+  .tdkhover{
+    width: 20px;
+    margin-right: -30px;
+  }
+  .imgsubmit{
+      width: 20px;
+     margin-left: 20px;
+    }
+  .submit span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.4s;
+    color: #fff;
+  }
+  .submit:hover{
+    border: #F47522 1px solid;
+    background-color: #fff;
+  }
+  .submit span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0s;
+    color: #F47522;
+  }
+  
+  .submit:hover span {
+    padding-right: 25px;
+    color: #F47522;
+  }
+  .submit:hover span:after {
+    opacity: 1;
+    right: 0;
+  }
+  .gambarsubmit{
+    font-family: 'Muli', sans-serif;
+  }
+
+/* Konten END */
+
+
+  /* Media min 992px */
+  @media screen and (min-width: 992px) {
+      .tombolAtas{
+          margin-right: 25px;
+      }
+      .kontak{
+          margin:0px;
+      }
+    }
+    
+    /* Media min 992px--END */
+    /* Media max 992px */
+    @media screen and (max-width: 992px) {
+      .tombolAtas{
+        text-align: center;
+      }
+      .kontak{
+        margin:auto
+      }
+      .konten{
+          width: 100%;
+          padding-left:5%;
+          padding-right:5%;
+          }
+    }
+    @media screen and (max-width: 768px) {
+    .konten{
+        width: 100%;
+        padding:0px;
+        }
+    }
+        
+      
+  /* Media max 992px--END */
