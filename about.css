@@ -1,0 +1,77 @@
+/* Fonts */
+@font-face{
+    font-family: 'Roboto', sans-serif;
+    src: url('fonts/Roboto-Medium.ttf');
+  }
+  @font-face {
+    font-family: 'Muli', sans-serif;';
+    src: url(img/Muli/Muli-Bold.ttf);));
+  }
+  
+  /* <!-- Navbar --> */
+  .kontainer{
+    font-family: 'Muli',sans-serif;
+  }
+  .tombolAtas{
+      transition: 0.3s;
+  }
+  .putihatas{
+    background-color: #fff;
+  }
+  .tombolAtas:hover{
+      text-align: center;
+      border-radius: 20px;
+      border-bottom: #F47522 3px ridge;
+      color: blue !important;
+      -webkit-box-shadow: inset 0px -5px 19px 0px rgba(244,117,34,0.39); 
+      box-shadow: inset 0px -5px 19px 0px rgba(244,117,34,0.39);
+      height: 38px;
+      font-weight: bold;
+  }
+  .kontak {
+      border-radius: 20px;
+      border: 1px solid #F47522;
+      color: #F47522 !important;
+      text-align: center;
+      font-size: 15px;
+      width: 130px;
+      height: 38px;
+      cursor: pointer;
+      margin: 5px;
+    }
+    
+    .kontak span {
+      cursor: pointer;
+      display: inline-block;
+      position: relative;
+      transition: 0.5s;
+    }
+    .kontak:hover{
+      background-color: #F47522;
+      color: #fff !important;
+    }
+    .kontak span:after {
+      content: '\00bb';
+      position: absolute;
+      opacity: 0;
+      top: 0;
+      right: -20px;
+      transition: 0s;
+    }
+    
+    .kontak:hover span {
+      padding-right: 25px;
+    }
+    .kontak:hover span:after {
+      opacity: 1;
+      right: 0;
+    }
+    .dummyhead{
+      height: 93.03px;
+      color:#F47522;
+      border: #F47522;
+    }
+  
+    /* <!-- Navbar End --> */
+    /* <!-- Hero 1 --> */
+    /* <!-- Hero 1 END--> */
