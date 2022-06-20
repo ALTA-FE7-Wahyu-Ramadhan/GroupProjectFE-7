@@ -50,10 +50,6 @@
       position: relative;
       transition: 0.5s;
     }
-    .kontak:hover{
-      background-color: #F47522;
-      color: #fff !important;
-    }
     .kontak span:after {
       content: '\00bb';
       position: absolute;
@@ -64,6 +60,7 @@
     }
     
     .kontak:hover span {
+      color: #F47522;
       padding-right: 25px;
     }
     .kontak:hover span:after {
@@ -72,8 +69,6 @@
     }
     .dummyhead{
       height: 93.03px;
-      color:#F47522;
-      border: #F47522;
     }
   
     /* <!-- Navbar End --> */
