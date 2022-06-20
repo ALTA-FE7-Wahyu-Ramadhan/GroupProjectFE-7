@@ -261,6 +261,22 @@ h5.bawahkapsul{
     font-family: 'Muli', sans-serif;
 }
 /* About END */
+.bubble{
+  width: 70px;
+  padding: 5px;
+  background-color: #fff;
+  border: #F47522 dashed 2px;
+  border-radius: 50%;
+  position: fixed;
+  bottom: 30px;
+  right: 15px;
+  transition: 0.12s;
+  opacity: 0.6;
+}
+.bubble:hover{
+  border: #F47522 solid 2px;
+  box-shadow: inset 0px 0px 10px 0px rgba(58, 37, 23, 0.5);
+}
 /* Media min 992px */
 @media screen and (min-width: 992px) {
     .tombolAtas{
