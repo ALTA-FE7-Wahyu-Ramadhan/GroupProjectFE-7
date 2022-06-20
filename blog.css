@@ -131,9 +131,10 @@
   border: #F47522 dashed 2px;
   border-radius: 50%;
   position: fixed;
-  bottom: 50px;
-  left: 7px;
+  bottom: 30px;
+  right: 15px;
   transition: 0.12s;
+  opacity: 0.6;
 }
 .bubble:hover{
   border: #F47522 solid 2px;
