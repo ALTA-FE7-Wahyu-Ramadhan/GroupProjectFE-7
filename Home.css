@@ -4,8 +4,8 @@
   src: url('fonts/Roboto-Medium.ttf');
 }
 @font-face {
-  font-family: 'Muli', sans-serif;';
-  src: url(img/Muli/Muli-Bold.ttf);));
+  font-family: 'Muli', sans-serif;
+  src: url(img/Muli/Muli-Bold.ttf);
 }
 
 /* <!-- Navbar --> */
@@ -146,6 +146,15 @@
   opacity: 1;
   right: 0;
 }
+.jumbotronimg{
+    transition: 0.35s;
+}
+.jumbotronimg:hover{
+    cursor: pointer;
+    border-radius: 50%;
+    -webkit-box-shadow: inset 0px 0px 43px 0px rgba(244, 117, 34,0.5); 
+    box-shadow: inset 0px 0px 43px 0px rgba(244, 117, 34,0.5);
+}
 /*  <!-- Jumbotron End--> */
 
 /* Kapsul */
@@ -206,17 +215,50 @@ h5.bawahkapsul{
 .areaabout{
   height: 176px;
   text-align: center;
-  padding: 60px 0px;
+  padding: 60px 100px;
 }
 .about{
-  float: left;
-  
+    font-size: 45px;
+    font-family: 'Muli', sans-serif;
+    font-weight: 700;
+    color: #19345E;
 }
-.garis{
-  float: left;
-  width: 35px;
-  border-bottom: 2px solid #F47522;
-  margin: 15px 14.5px;
+.about:after, .about:before{
+    content: '\2014';
+    color: #F47522;
+}
+.pesta{
+    background-image: url(/img/bg-people@2x.png);
+    width: 100%;
+    height: 484px;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+}
+.filter{
+    background-color: #19345E;
+    opacity: 60%;
+    width: 100%;
+    height: 100%;
+    color: #19345E;
+  }
+  .paddingcuy{
+      padding: 144px 228px;
+      height: 484px;
+      width: 100%;
+      bottom: 480px;
+      position: relative;
+      color: #fff;
+  }
+.pesta1{
+    font-size: 55px;
+    font-family: 'Muli', sans-serif;
+    position: relative;
+    font-weight: bold;
+}
+.pesta2{
+    font-size: 18px;
+    font-family: 'Muli', sans-serif;
 }
 /* About END */
 /* Media min 992px */
@@ -266,5 +308,11 @@ h5.bawahkapsul{
   .kapsul{
     width: 100%;
   }
+  .paddingcuy{
+    padding: 0px;
+    height: auto;
+    width: 100%;
+    bottom: 50%;
+}
 }
 /* Media max 992px--END */
