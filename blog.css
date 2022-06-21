@@ -172,6 +172,31 @@
   height: 70px;
 }
 
+footer {
+  width: 100%;
+  height: 140px;
+  background-color: #19345E;
+  margin-top: 100px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  color: #FFFFFF;
+}
+
+footer p {
+  font-family: 'muli';
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.logoalta {
+  width: 110px;
+}
+
+.socmed-icon img {
+  width: 21px;
+}
+
   /* Media min 992px */
   @media screen and (min-width: 992px) {
       .tombolAtas{
@@ -202,3 +227,16 @@
       }
       
   /* Media max 992px--END */
+
+  /* PHONE L */
+  @media screen and (max-width: 425px) {
+    footer {
+      flex-wrap: wrap;
+      justify-content: space-around;
+      height: 220px;
+  }
+
+  .footer-box {
+      margin: 40px;
+  }
+  }
