@@ -71,10 +71,11 @@
                 If you have any suggestion, project or even you want to say, 
                 Hello.. Please fill out the form below and I will reply you shortly.
             </p>
-            <form>
+            <form name="formKu" onsubmit="return validateForm()" method="post">
                 <div class="form-group formkanan">
                   <label class="judulkotak" for="exampleInputText1">Full Name<span> *</span></label>
-                  <input type="text" class="form-control" id="exampleInputText1" aria-describedby="emailHelp" placeholder="Your Full Name">
+                  <input type="text" class="form-control" id="exampleInputText1" aria-describedby="emailHelp" placeholder="Your Full Name" name="fname">
+                  
                 </div>
                 <div class="form-group">
                   <label class="judulkotak" for="exampleInputEmail1">Email Address<span> *</span></label>

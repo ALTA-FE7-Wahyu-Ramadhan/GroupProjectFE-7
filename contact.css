@@ -209,6 +209,11 @@ footer p {
   width: 21px;
 }
 
+.validation {
+  margin-top: -25px;
+  color: red;
+}
+
 
 /* footer end */
 

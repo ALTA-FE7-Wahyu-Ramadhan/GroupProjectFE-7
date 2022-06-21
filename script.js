@@ -1,5 +1,5 @@
 function validateForm() {
-    let x = document.forms["myForm"]["fname"].value;
+    let x = document.forms["formKu"]["fname"].value;
     if (x == "") {
       alert("Name must be filled out");
       return false;
