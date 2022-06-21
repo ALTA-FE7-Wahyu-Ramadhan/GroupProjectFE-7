@@ -8,7 +8,6 @@
   src: url(img/Muli/Muli-Bold.ttf);
 }
 
-@import url("https://use.typekit.net/vrh5eng.css");
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&family=Roboto:wght@700&display=swap');
 
 /* <!-- Navbar --> */
@@ -264,6 +263,8 @@ h5.bawahkapsul{
     font-family: 'Muli', sans-serif;
 }
 /* About END */
+
+/* BUBLE */
 .bubble{
   width: 70px;
   padding: 5px;
@@ -310,6 +311,8 @@ h5.bawahkapsul{
   height: 70px;
 }
 
+/* END BUBBLE */
+
 #ourteam {
     margin-bottom: 100px;
 }
@@ -332,14 +335,14 @@ h5.bawahkapsul{
 }
 
 .title {
-    font-family: 'muli', sans-serif;
-    color: #19345E;
+  font-family: 'Muli',sans-serif;
+  color: #19345E;
 }
 
 .title h1, p {
-    font-family: 'muli';
-    font-weight: 700;
-    font-style: normal;
+  font-family: 'Muli',sans-serif;
+  font-weight: 700;
+  font-style: normal;
 }
 
 .line {
@@ -365,7 +368,7 @@ h5.bawahkapsul{
 }
 
 .image-box h2 {
-    font-family: 'Roboto', sans-serif;
+  font-family: 'Roboto', sans-serif;
     font-size: 20px;
     color: #F47522;
     margin-top: 50px;
@@ -373,7 +376,7 @@ h5.bawahkapsul{
 }
 
 .image-box p {
-    font-family: 'Poppins', sans-serif;
+  font-family: 'Poppins', sans-serif;
     font-size: 16px;
     color: #19345E;
     margin: 0;
@@ -427,10 +430,10 @@ h5.bawahkapsul{
 }
 
 .checknow {
-    font-family: 'muli';
-    color: #19345E;
-    text-decoration: none;
-    font-weight: 700;
+  font-family: 'Muli',sans-serif;
+  color: #19345E;
+  text-decoration: none;
+  font-weight: 700;
 }
 
 a{
@@ -480,7 +483,7 @@ a:hover {
 }
 
 .author p {
-    font-family: 'Poppins', sans-serif;
+  font-family: 'Poppins', sans-serif;
     font-size: 14px;
 }
 
@@ -500,7 +503,7 @@ footer {
 }
 
 footer p {
-    font-family: 'muli';
+  font-family: 'Muli',sans-serif;
     font-size: 14px;
     font-weight: 400;
 }
@@ -659,4 +662,6 @@ footer p {
     }
 
     .footer-box {
-        margin: 4
+        margin: 10px;
+    }
+  }
