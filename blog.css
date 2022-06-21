@@ -138,9 +138,39 @@
 }
 .bubble:hover{
   border: #F47522 solid 2px;
+  opacity: 1;
   box-shadow: inset 0px 0px 10px 0px rgba(58, 37, 23, 0.5);
 }
 /* Isi End */
+#keAtas {
+  display: none;
+  position: fixed;
+  bottom: 30px;
+  left: 15px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: #fff;
+  color: white;
+  cursor: pointer;
+  border-radius: 50%;
+  opacity: 0.5;
+  border: #19345E dashed 3px;
+  transition: 0.2s;
+}
+
+#keAtas:hover {
+  border: #19345E solid 3px;
+  background-color: #F47522;
+  opacity: 1;
+  box-shadow: inset 0px 0px 10px 0px rgba(58, 37, 23, 0.5);
+}
+.arrowtotop{
+  -ms-transform: rotate(-90deg);
+  transform: rotate(-90deg);
+  height: 70px;
+}
 
   /* Media min 992px */
   @media screen and (min-width: 992px) {
