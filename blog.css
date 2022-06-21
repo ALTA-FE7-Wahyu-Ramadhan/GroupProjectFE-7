@@ -194,5 +194,11 @@
       .isi{
         padding: 0px;
       }
+      .subjudul{
+        text-align: center;
+      }
+      .subsubjudul{
+        text-align: center;
+      }
       
   /* Media max 992px--END */
