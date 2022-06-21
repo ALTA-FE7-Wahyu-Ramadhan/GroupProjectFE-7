@@ -9,9 +9,15 @@
     <title>HOME</title>
   </head>
   <body>
+    <!-- Top Button -->
+    <button onclick="topFunction()" id="keAtas" title="Go to top"><img src="img/arrow-active.png" alt="arrowtotop" class="arrowtotop"></button>
+
+    <!-- Top Button End -->
+
     <!-- Bubble -->
     <a href="#"><img src="img/phone.png" alt="bubble" class="bubble"></a>
     <!-- Bubble End -->
+    
     <!-- Navbar Start -->
     <nav class="fixed-top kontaiter navbar navbar-expand-lg navbar-light shadow-sm putihatas">
       <div class="container">
@@ -96,7 +102,30 @@
             <p class="pesta2">As a brandnew Catalyst, we are aiming to become one of the best tech companies in Indonesia. Joining the tech industry in Indonesia since 2015 under the name of Sepulsa, we have evolved as a B2B tech company in 4 years providing various services such as Bill Payment Aggregator, Distribution Network, Promotion Platform, and Tech Academy.</p>
           </div>
       </div>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous">
+    </script>
+
+    <script>
+    //Get the button
+    var mybutton = document.getElementById("keAtas");
+
+    // When the user scrolls down 20px from the top of the document, show the button
+    window.onscroll = function() {scrollFunction()};
+
+    function scrollFunction() {
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        mybutton.style.display = "block";
+      } else {
+        mybutton.style.display = "none";
+      }
+    }
+
+    // When the user clicks on the button, scroll to the top of the document
+    function topFunction() {
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
+    }
     </script>
   </body>
 </html>
