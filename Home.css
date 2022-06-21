@@ -5,7 +5,7 @@
 }
 @font-face {
   font-family: 'Muli', sans-serif;
-  src: url(img/Muli/Muli-Bold.ttf);
+  src: url('img/Muli/Muli-Bold.ttf');
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&family=Roboto:wght@700&display=swap');
@@ -566,7 +566,7 @@ footer p {
     padding: 0px;
     height: auto;
     width: 100%;
-    bottom: 50%;
+    bottom: 80%;
 }
 }
 /* Media max 992px--END */
