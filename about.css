@@ -1,0 +1,147 @@
+/* Fonts */
+@font-face{
+    font-family: 'Roboto', sans-serif;
+    src: url('fonts/Roboto-Medium.ttf');
+  }
+  @font-face {
+    font-family: 'Muli', sans-serif;
+    src: url('img/Muli/Muli-Bold.ttf');
+  }
+  
+  /* <!-- Navbar --> */
+  .kontainer{
+    font-family: 'Muli',sans-serif;
+  }
+  .tombolAtas{
+      transition: 0.3s;
+  }
+  .putihatas{
+    background-color: #fff;
+  }
+  .tombolAtas:hover{
+      text-align: center;
+      border-radius: 20px;
+      border-bottom: #F47522 3px ridge;
+      color: blue !important;
+      -webkit-box-shadow: inset 0px -5px 19px 0px rgba(244,117,34,0.39); 
+      box-shadow: inset 0px -5px 19px 0px rgba(244,117,34,0.39);
+      height: 38px;
+      font-weight: bold;
+  }
+  .kontak {
+      border-radius: 20px;
+      border: 1px solid #F47522;
+      color: #F47522 !important;
+      text-align: center;
+      font-size: 15px;
+      width: 130px;
+      height: 38px;
+      cursor: pointer;
+      margin: 5px;
+    }
+    li.nav-item{
+      margin-top: 0px !important;
+      opacity: 1 !important;
+    }
+    .kontak span {
+      cursor: pointer;
+      display: inline-block;
+      position: relative;
+      transition: 0.5s;
+    }
+    .kontak:hover{
+      background-color: #F47522;
+      color: #fff !important;
+    }
+    .kontak span:after {
+      content: '\00bb';
+      position: absolute;
+      opacity: 0;
+      top: 0;
+      right: -20px;
+      transition: 0s;
+    }
+    
+    .kontak:hover span {
+      padding-right: 25px;
+    }
+    .kontak:hover span:after {
+      opacity: 1;
+      right: 0;
+    }
+    .dummyhead{
+      height: 93.03px;
+      color:#F47522;
+      border: #F47522;
+    }
+    .bubble{
+      width: 70px;
+      padding: 5px;
+      background-color: #fff;
+      border: #F47522 dashed 2px;
+      border-radius: 50%;
+      position: fixed;
+      bottom: 30px;
+      right: 15px;
+      transition: 0.12s;
+      opacity: 0.6;
+    }
+    .bubble:hover{
+      opacity: 1;
+      border: #F47522 solid 2px;
+      box-shadow: inset 0px 0px 10px 0px rgba(58, 37, 23, 0.5);
+    }
+    /* <!-- Navbar End --> */
+    /* To Top Arrow Button */
+    #keAtas {
+      display: none;
+      position: fixed;
+      bottom: 30px;
+      left: 15px;
+      z-index: 99;
+      font-size: 18px;
+      border: none;
+      outline: none;
+      background-color: #fff;
+      color: white;
+      cursor: pointer;
+      border-radius: 50%;
+      opacity: 0.5;
+      border: #19345E dashed 3px;
+      transition: 0.2s;
+    }
+    
+    #keAtas:hover {
+      border: #19345E solid 3px;
+      background-color: #F47522;
+      opacity: 1;
+      box-shadow: inset 0px 0px 10px 0px rgba(58, 37, 23, 0.5);
+    }
+    .arrowtotop{
+      -ms-transform: rotate(-90deg);
+      transform: rotate(-90deg);
+      height: 70px;
+    }
+    
+    
+    /* To Top Arrow Button End */
+
+    @media screen and (min-width: 992px) {
+      .tombolAtas{
+          margin-right: 25px;
+      }
+      .kontak{
+          margin:0px;
+      }
+      .kontaiter{
+          padding: 15px 159px;
+      }
+    }
+    @media screen and (max-width: 992px) {
+      .tombolAtas{
+        text-align: center;
+      }
+      .kontak{
+        margin:auto
+      }
+    }
