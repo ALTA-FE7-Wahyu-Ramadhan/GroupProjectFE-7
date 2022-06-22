@@ -571,6 +571,7 @@ footer p {
 }
 /* Media max 992px--END */
 
+
 /*RESPONSIVE*/
 
 /*IPAD*/
@@ -620,8 +621,24 @@ footer p {
     .kartu-box {
         margin-bottom: 40px;
     }
-
-
+    .bgBiru{
+      padding: 10% 5%;
+    }
+    .gambarkapsul{
+      width: 25%;
+      margin-right: 1px;
+    }
+    .kapsul{
+      width: 100%;
+      height: max-content;
+      padding: 5% 2%;
+      flex-wrap: wrap
+    }
+    .kiriKapsul{
+      flex: 1;
+      height: 42.5px ;
+      border-right: 1px solid #AAAAAA;
+    }
 }
 /*END IPAD*/
 
