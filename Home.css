@@ -639,6 +639,13 @@ footer p {
       height: 42.5px ;
       border-right: 1px solid #AAAAAA;
     }
+    .areaabout{
+    height: 10%;
+    padding: 3% 2%;
+    }
+    .about{
+      font-size: 200%;
+    }
 }
 /*END IPAD*/
 
