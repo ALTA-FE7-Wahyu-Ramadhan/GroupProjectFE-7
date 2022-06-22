@@ -1,0 +1,239 @@
+@import url("https://use.typekit.net/vrh5eng.css");
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&family=Roboto:wght@700&display=swap');
+
+body {
+    color: #19345E;
+    width: 100%;
+    margin-bottom: 0;
+}
+
+section {
+    margin-bottom: 70px;
+}
+
+.ornamenbatik {
+    position: absolute;
+    width: 200px;
+    left: 0;
+    top: 0;
+    z-index: -2000;
+}
+
+.ornamenbatik2 {
+    position: absolute;
+    width: 200px;
+    right: 0;
+    bottom: -2500px;
+    z-index: -2000;
+}
+
+.muli {
+    font-family: 'muli', sans-serif;
+}
+
+.poppins {
+    font-family: 'Poppins', sans-serif;
+}
+
+.delapanbelas {
+    font-size: 18px;
+}
+
+.dualima {
+    font-size: 25px;
+}
+
+.empatbelas {
+    font-size: 14px;
+}
+
+h1 {
+    font-size: 45px;
+}
+
+.headliner {
+    width: 550px;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+}
+
+.title {
+    font-family: 'muli', sans-serif;
+    color: #19345E;
+}
+
+.title h1, p {
+    font-family: 'muli';
+    font-weight: 700;
+    font-style: normal;
+}
+
+.line {
+    background-color: #F47522;
+    width: 35px;
+    height: 2px;
+    margin: 0 30px;
+}
+
+.content {
+    width: 60%;
+    margin: auto;
+}
+
+.about-box {
+    width: 60%;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-bottom: 100px;
+}
+
+.image-box img {
+    width: 320px;
+    height: 399px;
+}
+
+.frame {
+    position: relative;
+    width: 320px;
+    height: 399px;
+    border: 10px solid #F47522;
+    margin-top: -414px;
+    left: -42px;
+    bottom: -33px;
+}
+
+td {
+    padding: 10px;
+}
+
+.about-box-2 {
+    display: flex;
+    width: 60%;
+    margin: auto;
+    justify-content: space-around;
+    border-bottom: 2px dotted grey;
+    padding-bottom: 50px;
+}
+
+ul img {
+    width: 14px;
+    height: 14px;
+}
+
+ul p {
+    font-size: 14px;
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+}
+
+.flex p {
+    margin-left: 5px;
+    margin-top: 20px;
+}
+
+li:nth-child(2), li:nth-child(3) {
+    list-style: none;
+}
+
+li:nth-child(2){
+    margin-top: -10px;
+
+}
+
+li:nth-child(3) {
+    opacity: .5;
+    margin-top: -10px;
+}
+
+footer {
+    width: 100%;
+    height: 140px;
+    background-color: #19345E;
+    margin-top: 100px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: #FFFFFF;
+}
+
+footer p {
+    font-family: 'muli';
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.logoalta {
+    width: 110px;
+}
+
+.socmed-icon img {
+    width: 21px;
+}
+
+/*RESPONSIVE*/
+
+@media screen and (min-width: 769px){
+    .description {
+        margin-top: 100px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .description {
+        margin-top: 100px;
+    }
+
+    .about-box {
+        margin-bottom: 30px;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .content h2 {
+        margin-left: 0px;
+        text-align: center;
+    }
+
+    .headliner {
+        width: 350px;
+        align-items: center;
+    }
+
+    .headliner h1 {
+        font-size: 30px;
+    }
+
+    .line {
+        margin: 5px;
+    }
+
+    .about-box-2 {
+        width: 90%;
+    }
+
+    footer {
+        flex-wrap: wrap;
+        justify-content: space-around;
+        height: 220px;
+    }
+
+    .footer-box {
+        margin: 40px;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .frame {
+        left: -10px;
+        bottom: -1px;
+    }
+}
