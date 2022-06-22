@@ -230,6 +230,15 @@ footer p {
 
   /* PHONE L */
   @media screen and (max-width: 425px) {
+    .areajudul{
+      height: 10%;
+      padding: 3% 2%;
+      }
+      .judul{
+        font-size: 200%;
+      }
+  }
+  @media screen and (max-width: 425px) {
     footer {
       flex-wrap: wrap;
       justify-content: space-around;

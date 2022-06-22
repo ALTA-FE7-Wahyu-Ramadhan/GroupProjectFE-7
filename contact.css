@@ -248,7 +248,15 @@ footer p {
         width: 100%;
         padding:0px;
         }
-    }
+        .areajudul{
+          height: 10%;
+          padding: 3% 2%;
+          }
+          .judul{
+            font-size: 200%;
+          }
+      }
+    
         
       
   /* Media max 992px--END */
@@ -264,5 +272,8 @@ footer p {
 
   .footer-box {
       margin: 40px;
+  }
+  .judul{
+    font-size: 150%;
   }
   }
