@@ -267,7 +267,7 @@ footer p {
     footer {
       flex-wrap: wrap;
       justify-content: space-around;
-      height: 220px;
+      height: max-content;
   }
 
   .footer-box {
