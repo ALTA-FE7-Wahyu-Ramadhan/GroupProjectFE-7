@@ -228,12 +228,13 @@ h5.bawahkapsul{
     color: #F47522;
 }
 .pesta{
-    background-image: url(/img/bg-people@2x.png);
-    width: 100%;
-    height: 484px;
-    background-size: cover;
-    background-position: center;
-    text-align: center;
+  background-image: url(/img/bg-people@2x.png);
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  height: 100vh;
+  width: 100%;
+  background-attachment: fixed;
 }
 .filter{
     background-color: #19345E;
