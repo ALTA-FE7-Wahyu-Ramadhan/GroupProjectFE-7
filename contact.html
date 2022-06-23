@@ -71,19 +71,26 @@
                 If you have any suggestion, project or even you want to say, 
                 Hello.. Please fill out the form below and I will reply you shortly.
             </p>
-            <form name="formKu" onsubmit="return validateForm()" method="post">
+            <form name="formKu" onsubmit="return validateForm()" method="post" id="form">
                 <div class="form-group formkanan">
-                  <label class="judulkotak" for="exampleInputText1">Full Name<span> *</span></label>
-                  <input type="text" class="form-control" id="exampleInputText1" aria-describedby="emailHelp" placeholder="Your Full Name" name="fname">
-                  
+                  <label class="judulkotak" for="username">Full Name<span> *</span></label>
+                  <input type="text" class="form-control" id="username" aria-describedby="emailHelp" placeholder="Your Full Name" name="fname">
+                  <small class="small"></small>
                 </div>
                 <div class="form-group">
-                  <label class="judulkotak" for="exampleInputEmail1">Email Address<span> *</span></label>
-                  <input type="email" class="form-control" id="exampleInputPassword1" placeholder="Your Email">
+                  <label class="judulkotak" for="email">Email Address<span> *</span></label>
+                  <input type="email" class="form-control" id="email" placeholder="Your Email">
+                  <small class="small"></small>
                 </div>
                 <div class="form-group">
-                  <label class="judulkotak" for="exampleInputTel1">Phone Number<span> *</span></label>
-                  <input type="tel" class="form-control" id="exampleInputTel1" placeholder="Your Phone Number">
+                  <label class="judulkotak" for="phone">Phone Number<span> *</span></label>
+                  <input type="tel" class="form-control" id="phone" placeholder="Your Phone Number">
+                  <small class="small"></small>
+                </div>
+                <div class="form-group">
+                  <label class="judulkotak" for="password">Password<span> *</span></label>
+                  <input type="password" class="form-control" id="password" placeholder="password">
+                  <small class="small"></small>
                 </div>
                 <div class="form-group">
                     <label class="judulkotak" for="exampleFormControlTextarea1">Message<span> *</span></label>

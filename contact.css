@@ -214,6 +214,25 @@ footer p {
   color: red;
 }
 
+.form-control small {
+	color: #e74c3c;
+	position: relative;
+	bottom: 0;
+	left: 0;
+}
+
+.form-control.error small {
+	visibility: visible;
+}
+
+.form-control.success input {
+	border-color: #2ecc71;
+}
+
+.form-control.error input {
+	border-color: #e74c3c;
+}
+
 
 /* footer end */
 
