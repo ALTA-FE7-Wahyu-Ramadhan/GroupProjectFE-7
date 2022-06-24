@@ -104,7 +104,7 @@
       </div>
     
     <!-- MEET OUR TEAM -->
-  <section id="ourteam" class="mx-auto text-center">
+  <section id="ourteam" class="mx-auto text-center reveal">
       <img src="img/ornament_batik.png" alt="ornamen batik" class="ornamenbatik">
         <div class="headliner">
           <div class="line"></div>
@@ -139,7 +139,7 @@
       </div>
   </section>
 
-  <section id="latest-blog">
+  <section id="latest-blog" class="reveal">
     <div class="headliner">
       <div class="line"></div>
         <div class="title">
@@ -232,6 +232,34 @@
       document.body.scrollTop = 0;
       document.documentElement.scrollTop = 0;
     }
+
+    // onscroll reveal animation
+    // tangkap event ketika windows sedang di scroll
+    window.addEventListener('scroll', reveal );
+
+    // fungsi reveal
+    
+    function reveal(){
+      // tangkap DOM reveal
+      const reveals = document.querySelectorAll('.reveal');
+
+      // lakukan perulangan
+      for (let i = 0; i < reveals.length; i++){
+        // tangkap DOM
+        const windowHeight = window.innerHeight;
+        const revealTop = reveals[i].getBoundingClientRect().top;
+        const revealPoint = 150;
+
+        // masukkan logic
+        if (revealTop < windowHeight - revealPoint){
+          reveals[i].classList.add('active');
+        } else {
+          reveals[i].classList.remove('active');
+        }
+      }
+    }
+
+
     </script>
   </body>
 </html>
