@@ -175,7 +175,7 @@
 	<!-- END 1 -->
 
 	<!-- 2 -->
-	<section class="about">
+	<section class="about reveal">
 	    <div class="content">
 	    	<h2 class="muli">Frontend Developer</h2>
 	    </div>
@@ -296,7 +296,7 @@
 	<!-- END 2 -->
 
 	<!-- 3 -->
-	<section class="about">
+	<section class="about reveal">
 	    <div class="content">
 	    	<h2 class="muli">UI UX Designer</h2>
 	    </div>
@@ -461,6 +461,32 @@
     function topFunction() {
       document.body.scrollTop = 0;
       document.documentElement.scrollTop = 0;
+    }
+
+	// onscroll reveal animation
+    // tangkap event ketika windows sedang di scroll
+    window.addEventListener('scroll', reveal );
+
+    // fungsi reveal
+    
+    function reveal(){
+      // tangkap DOM reveal
+      const reveals = document.querySelectorAll('.reveal');
+
+      // lakukan perulangan
+      for (let i = 0; i < reveals.length; i++){
+        // tangkap DOM
+        const windowHeight = window.innerHeight;
+        const revealTop = reveals[i].getBoundingClientRect().top;
+        const revealPoint = 150;
+
+        // masukkan logic
+        if (revealTop < windowHeight - revealPoint){
+          reveals[i].classList.add('active');
+        } else {
+          reveals[i].classList.remove('active');
+        }
+      }
     }
     </script>
 </body>
